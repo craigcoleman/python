@@ -1,0 +1,387 @@
+"""
+The string "PYTHON" has six characters,
+numbered 0 to 5, as shown below:
+
++---+---+---+---+---+---+
+| P | Y | T | H | O | N |
++---+---+---+---+---+---+
+  0   1   2   3   4   5
+
+So if you wanted "Y", you could just type
+"PYTHON"[1] (always start counting from 0!)
+"""
+fifth_letter = "MONTY"[4]
+
+print fifth_letter
+
+strings
+
+len()
+lower()
+upper()
+str()
+
+
+parrot = "norwegian blue"
+
+print parrot.upper()
+
+string_1 = "Camelot"
+string_2 = "place"
+
+print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
+
+
+
+def clinic():
+    print "You've just entered the clinic!"
+    print "Do you take the door on the left or the right?"
+    answer = raw_input("Type left or right and hit 'Enter'.").lower()
+    if answer == "left" or answer == "l":
+        print "This is the Verbal Abuse Room, you heap of parrot droppings!"
+    elif answer == "right" or answer == "r":
+        print "Of course this is the Argument Room, I've told you that already!"
+    else:
+        print "You didn't pick left or right! Try again."
+        clinic()
+
+clinic()
+
+
+
+
+def using_control_once():
+    if True:
+        return "Success #1"
+
+def using_control_again():
+    if True:
+        return "Success #2"
+
+print using_control_once()
+print using_control_again()
+
+
+answer = "'Tis but a scratch!"
+
+def black_knight():
+    if answer == "'Tis but a scratch!":
+        return True
+    else:             
+        return        # Make sure this returns False
+
+def french_soldier():
+    if answer == "Go away, or I shall taunt you a second time!":
+        return True
+    else:             
+        return        # Make sure this returns False
+        
+        
+answer = "'Tis but a scratch!"
+
+def black_knight():
+    if answer == "'Tis but a scratch!":
+        return True
+    else:             
+        return False        # Make sure this returns False
+
+def french_soldier():
+    if answer == "Go away, or I shall taunt you a second time!":
+        return True
+    else:             
+        return False        # Make sure this returns False
+        
+        
+def greater_less_equal_5(answer):
+    if (answer > 5):
+        return 1
+    elif (answer < 5):          
+        return -1
+    else:
+        return 0
+        
+print greater_less_equal_5(4)
+print greater_less_equal_5(5)
+print greater_less_equal_5(6)
+
+
+
+
+# Make sure that the_flying_circus() returns True
+def the_flying_circus():
+    if 5>4 and 4 > 3:    # Start coding here!
+        # Don't forget to indent
+        # the code inside this block!
+        return True
+    elif 3==3:
+        # Keep going here.
+        return False
+        # You'll want to add the else statement, too
+        
+    else:
+      return False
+      
+
+#def cude
+def cube(number):
+  return number**3
+
+def by_three(number):
+  if number % 3 == 0:
+    return cube(number)
+  else:
+    return False
+    
+ suitcase = [] 
+suitcase.append("sunglasses")
+
+# Your code here!
+suitcase.append("shirt")
+
+# dcitionaries
+menu = {} # Empty dictionary
+menu['Chicken Alfredo'] = 14.50 # Adding new key-value pair
+print menu['Chicken Alfredo']
+
+# Your code here: Add some dish-price pairs to menu!
+menu['Hot Dogs'] = 2
+menu['Ice Cream'] = 3
+menu['Soda'] = 1
+
+
+
+print "There are " + str(len(menu)) + " items on the menu."
+print menu
+
+suitcase.append("socks")
+suitcase.append("pants")
+
+list_length = len(suitcase) # Set this to the length of suitcase
+
+print "There are %d items in the suitcase." % (list_length)
+print suitcase
+
+
+start_list = [5, 3, 1, 2, 4]
+square_list = []
+
+# Your code here!
+
+
+
+for x in start_list:
+  square_list.append(x**2) 
+  print square_list 
+  square_list.sort()
+ 
+print square_list 
+
+
+#list
+backpack = ['xylophone', 'dagger', 'tent', 'bread loaf']
+backpack.remove('dagger')CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'newuser'@'localhost';
+FLUSH PRIVILEGES;
+
+
+## for loop
+# Write your function below!
+def fizz_count(x):
+  count = 0
+  for i in x:
+    if i == "fizz":
+      count = count + 1
+  return count
+  
+  
+  for letter in "Codecademy":
+  print letter
+    
+# Empty lines to make the output pretty
+print
+print
+
+word = "Programming is fun!"
+
+for letter in word:
+  # Only print out the letter i
+  if letter == "i":
+    print letter
+    
+    
+# dictionaries
+
+prices = {}
+prices = {
+  "banana":4,
+  "apple":2,
+  "orange":1.5,
+  "pear":3
+}
+
+stock = {}
+stock = {
+  "banana":6,
+  "apple":0,
+  "orange":32,
+  "pear":15
+}
+
+
+#code
+prices = {"banana": 4,
+          "apple": 2,
+          "orange": 1.5,
+          "pear": 3}
+
+stock = {"banana": 6, 
+         "apple": 0, 
+         "orange": 32, 
+         "pear": 15}
+
+
+#code
+for i in prices:
+  print i
+  print "price: %s" % prices[i]
+  print "stock: %s" % stock[i]
+  
+  
+  prices = {
+  "banana" : 4,
+  "apple"  : 2,
+  "orange" : 1.5,
+  "pear"   : 3,
+}
+stock = {
+  "banana" : 6,
+  "apple"  : 0,
+  "orange" : 32,
+  "pear"   : 15,
+}
+
+total = 0
+for key in prices:
+  print key
+  print "price: %s" % prices[key]
+  print "stock: %s" % stock[key]
+
+  total = total + (prices[key] * stock[key])
+
+print total
+
+
+#code
+shopping_list = ["banana", "orange", "apple"]
+
+stock = {
+  "banana": 6,
+  "apple": 0,
+  "orange": 32,
+  "pear": 15
+}
+    
+prices = {
+  "banana": 4,
+  "apple": 2,
+  "orange": 1.5,
+  "pear": 3
+}
+
+# Write your code below!
+def compute_bill(food):
+  total = 0
+  for n in food:
+    total = total + prices[n]
+  return total
+  
+  
+#shopping list
+
+shopping_list = ["banana", "orange", "apple"]
+
+stock = {
+  "banana": 6,
+  "apple": 0,
+  "orange": 32,
+  "pear": 15
+}
+    
+prices = {
+  "banana": 4,
+  "apple": 2,
+  "orange": 1.5,
+  "pear": 3
+}
+
+# Write your code below!
+def compute_bill(food):
+  total = 0
+  for n in food:
+    if stock[n] > 0:
+    	total = total + prices[n]
+    	stock[n] = stock[n] - 1
+  return total
+
+print compute_bill(shopping_list)
+
+STUDENT BECOMES THE TEACHER
+Lesson Number One
+
+#########################3333
+# print dictionary amoounts
+lloyd = {
+   "name": "Lloyd",
+  "homework": [90.0, 97.0, 75.0, 92.0],
+  "quizzes": [88.0, 40.0, 94.0],
+  "tests": [75.0, 90.0]
+}
+alice = {
+  "name": "Alice",
+  "homework": [100.0, 92.0, 98.0, 100.0],
+  "quizzes": [82.0, 83.0, 91.0],
+  "tests": [89.0, 97.0]
+}
+tyler = {
+  "name": "Tyler",
+  "homework": [0.0, 87.0, 75.0, 22.0],
+  "quizzes": [0.0, 75.0, 78.0],
+  "tests": [100.0, 100.0]
+}
+
+students = [lloyd, alice, tyler]
+for i in students:
+  print i["name"]
+  print i["homework"]
+  print i["quizzes"]
+  print i["tests"]
+  
+  ##############
+  lloyd = {
+  "name": "Lloyd",
+  "homework": [90.0, 97.0, 75.0, 92.0],
+  "quizzes": [88.0, 40.0, 94.0],
+  "tests": [75.0, 90.0]
+}
+alice = {
+  "name": "Alice",
+  "homework": [100.0, 92.0, 98.0, 100.0],
+  "quizzes": [82.0, 83.0, 91.0],
+  "tests": [89.0, 97.0]
+}
+tyler = {
+  "name": "Tyler",
+  "homework": [0.0, 87.0, 75.0, 22.0],
+  "quizzes": [0.0, 75.0, 78.0],
+  "tests": [100.0, 100.0]
+}
+
+# Add your function below!
+def average(numbers):
+  total = float(sum(numbers))
+  return total / len(numbers)
+  
+  ####################3
+
+
+###########################3333
